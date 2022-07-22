@@ -4,12 +4,12 @@ import SideMenu from '../components/SideMenu';
 import { useSelector } from 'react-redux';
 
 const Search = () => {
-  const display = useSelector((state)=>state.video.listLayout);
+  const {listLayout} = useSelector((state)=>state.video);
     return (
         <>
           <SideMenu  /> 
           <section className='main-content'>
-            <VideoList display={display} />
+            { listLayout && <VideoList display={listLayout} />}
           </section>
         </>
     );

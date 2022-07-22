@@ -67,3 +67,20 @@
     margin-right: 0.3rem;
     font-size: 0.7rem;
 }
+.date{
+    color: var(--color-light-gray);
+    font-size: 0.5rem;
+}
+.watchList .videoItemGrid{
+    display: flex;
+    max-width: 100%;
+    flex : 1 1 100%;
+}
+
+.watchList .videoItemGrid .videoTitle{
+    width: 50%;
+}
+
+.videoList.VideoRowList .videoItemGrid .videoTitle{
+    width: 50%;
+}
