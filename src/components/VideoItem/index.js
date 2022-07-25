@@ -14,7 +14,7 @@ const VideoItem = ({item,value}) => {
     //value items 
     const navigate=useNavigate();
     const goToWatch = () => {
-    navigate(`/watch?id=${id}`)
+    navigate(`/watch?id=${id}&channelId=${item.channelId}`) //id에는 비디오id, channelid에는 내가 선택한 채널 id가 들어감
    }
 
     return (
